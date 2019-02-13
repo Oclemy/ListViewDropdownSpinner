@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.camposha.listviewdropdownspinner.MainActivity">
+
+    <TextView
+        android:id="@+id/headerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:text="Cosmic Bodies"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/mySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@id/headerLabel"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/editbox_dropdown_light_frame" />
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_below="@id/mySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
